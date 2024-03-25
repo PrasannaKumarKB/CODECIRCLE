@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bannari Amman Institute of Technology - Sports and Achievements</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .achievement-container {
+            position: relative;
+            background-color: #fff;
+            cursor: pointer;
+            margin: 10px;
+            overflow: hidden;
+            width: 300px;
+            height: 300px;
+        }
+
+        img {
+            max-width: 100%;
+            height: 400px;
+            border-radius: 8px;
+            transition: transform ease-in-out 0.5s;
+        }
+
+        .achievement-container:hover img {
+            transform: scale(1.10);
+        }
+
+        .achievement-container:hover .overlay {
+            transform: translateY(-50%);
+        }
+
+        .overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            text-align: left;
+            border-bottom-left-radius: 8px;
+            border-bottom-right-radius: 8px;
+            transition: transform 0.3s ease-in-out;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 10px;
+        }
+
+        h3 {
+            color: white;
+            margin-bottom: 10px;
+        }
+
+        .banner {
+            background-image: url("sports_banner.jpg");
+            background-size: cover;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        h1 {
+            color: rgb(11, 10, 10);
+            font-size: 3rem;
+        }
+
+        .footer-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        footer {
+            background-color: black;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        /* Styles for footer links */
+        .footer-links {
+            flex: 1;
+            text-align: center;
+            padding: 0 20px;
+            margin-top: 30px;
+        }
+
+        .footer-links a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .footer-links a:hover {
+            color: #f5a623;
+        }
+        p{
+            color: #f5f5f5;
+        }
+    </style>
+</head>
+<body>
+    <a class="back-button" href="index.html" style="position: absolute; top: 20px; left: 20px; font-size: 48px; color:white; text-decoration: none;">&larr;</a>
+   
+        <!-- <div class="overlay"> -->
+            <h1>Sports and Achievements</h1>
+        <!-- </div> -->
+    <main>
+        <!-- Sports and achievements containers -->
+        <div class="achievement-container">
+            <div class="img">
+                <img src="https://www.bitsathy.ac.in/wp-content/uploads/Ausb-Inter-Zonal-Tournament.jpg" alt="Football">
+            </div>
+            <div class="overlay">
+                <h3>Ausb Inter Zonal Tournament</h3>
+            </div>
+        </div>
+
+        <div class="achievement-container">
+            <div class="img">
+                <img src="https://www.bitsathy.ac.in/wp-content/uploads/Erode-District-Level-2023-2024.jpg" alt="Basketball">
+            </div>
+            <div class="overlay">
+                <h3>Erode District Level 2023 – 2024</h3>
+            </div>
+        </div>
+
+        <div class="achievement-container">
+            <div class="img">
+                <img src="https://www.bitsathy.ac.in/wp-content/uploads/Tamilnadu-State-Wushu-Championship.jpg" alt="Cricket">
+            </div>
+            <div class="overlay">
+                <h3>Tamilnadu State Wushu Championship</h3>
+            </div>
+        </div>
+        <div class="achievement-container">
+            <div class="img">
+                <img src="https://www.bitsathy.ac.in/wp-content/uploads/State-Level-Karate-Championship-2048x1536.jpg" alt="Cricket">
+            </div>
+            <div class="overlay">
+                <h3>State-Level Karate Championship</h3>
+            </div>
+        </div>
+        <div class="achievement-container">
+            <div class="img">
+                <img src="https://www.bitsathy.ac.in/wp-content/uploads/Anna-University-Representation-1.jpg" alt="Cricket">
+            </div>
+            <div class="overlay">
+                <h3>Anna University Representation</h3>
+            </div>
+        </div>
+        <div class="achievement-container">
+            <div class="img">
+                <img src="https://www.bitsathy.ac.in/wp-content/uploads/Bit-Alumni-Trophy-Final.jpg" alt="Cricket">
+            </div>
+            <div class="overlay">
+                <h3>BIT Alumni Trophy 2022 – 23</h3>
+            </div>
+        </div>
+        <div class="achievement-container">
+            <div class="img">
+                <img src="https://www.bitsathy.ac.in/wp-content/uploads/Erode-District-Level-Cm-Trophy-2023-2048x1536.jpg" alt="Cricket">
+            </div>
+            <div class="overlay">
+                <h3>Erode District Level CM Trophy 2023</h3>
+            </div>
+        </div>
+        <div class="achievement-container">
+            <div class="img">
+                <img src="https://www.bitsathy.ac.in/wp-content/uploads/Ausb-Zonal-Achievements.jpg" alt="Cricket">
+            </div>
+            <div class="overlay">
+                <h3>Ausb Zonal Achievements</h3>
+            </div>
+        </div>
+        <div class="achievement-container">
+            <div class="img">
+                <img src="https://www.bitsathy.ac.in/wp-content/uploads/Anna-University-Inter-%E2%80%93-Zonal-Tournament-2048x1011.jpg" alt="Cricket">
+            </div>
+            <div class="overlay">
+                <h3>Ausb Inter Zonal Tournament</h3>
+            </div>
+        </div>
+
+        
+       
+
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-info">
+                <p>Bannari Amman Institute of Technology</p>
+                <p>Sathy-Bhavani Main Road, Sathyamangalam, Tamil Nadu - 638401</p>
+                <p>Email: info@bitsathy.ac.in</p>
+                <p>Phone: +91 4295 226000</p>
+            </div>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a> | <a href="#">Contact Us</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Handle clicking the back button
+        const backBtn = document.querySelector(".back-button");
+        backBtn.addEventListener("click", (e) => {
+            e.preventDefault();
+            window.history.back();
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BANNARI AMMAN INSTITUTE OF TECHNOLOGY</title>
+  <link rel="stylesheet" type="text/css" href="home.css">
+  <style>
+    main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+  margin-left: 40px;
+}
+
+
+.newsletters-container {
+  margin-top: 20px;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  width: calc(33.33% - 20px); /* Adjust the width based on your preferences */
+  margin: 10px;
+  box-sizing: border-box; /* Include padding and border in the box sizing */
+  height: 300px; /* Set a fixed height or adjust as needed */
+}
+
+.newsletters-container img {
+  max-width: 100%;
+  height: 400px;
+  background-size: 100% 100%;
+  object-fit: cover; /* Ensure the image covers the container */
+  transition: transform ease-in-out 0.5s;
+}
+
+.newsletters-container img:hover{
+  transform: scale(1.10);
+}
+
+
+
+
+.newsletters-container .overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: black;
+  text-align: left;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  padding: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.newsletters-container:hover .overlay {
+  transform: translateY(-50%);
+}
+
+.newsletters-container h3 {
+  color: white;
+  margin: 0;
+  transition: transform 0.3s ease-in-out;
+}
+
+.read-more-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  color: gold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.read-more-btn:hover {
+  background-color: #0056b3;
+}
+
+.arrow {
+  margin-left: 8px;
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  border-left: 8px solid gold;
+}
+
+
+  .explore-more-btn {
+      display: inline-block;
+      padding: 10px 20px;
+      font-size: 16px;
+      text-align: center;
+      text-decoration: none;
+      color: gold;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      margin-top: 10px; /* Adjust the margin based on your design */
+    }
+
+    
+
+    
+        
+    </style>
+
+</head>
+<body>
+  <div class="header">
+    <h1 style="font-weight: bolder;">BANNARI AMMAN INSTITUTE OF TECHNOLOGY</h1>
+    
+
+  <div class="navigation">
+    <span class="hamburger" onclick="openMenu()">&#9776;</span>
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li class="dropdown">
+        <a href="#" class="dropbtn">About &#9662;</a>
+        <div class="dropdown-content">
+          <a href="history.html">History</a>
+          <a href="milestones.html">Milestones</a>
+          <a href="sports.html">Sports & Achievements</a>
+          
+        </div>
+      </li>
+      <li class="dropdown">
+  <a href="#" class="dropbtn">Academics &#9662;</a>
+  <div class="dropdown-content">
+    <a href="departments.html">Departments</a>
+    <a href="programs.html">Programmes Offered</a>
+    <a href="faculty.html">Faculty Members</a>
+    
+  </div>
+</li>
+
+      <li><a href="support.html">Support Desk</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </div>
+  <div class="sliding-menu">
+    <span class="close-button" onclick="closeMenu()">&times;</span>
+    <div class="menu">
+      <ul class="dropdown">
+        <a href="#" class="dropbtn">Hostel Facilities </a>
+        <div class="dropdown-content">
+          <a href="boys.html">Boys Hostel</a>
+          <a href="girls.html">Girls Hostel</a>
+          
+        </div>
+      </ul>
+      <ul class="dropdown">
+        <a href="#" class="dropbtn">Food Facilities</a>
+        <div class="dropdown-content">
+          <a href="mess.html">Hostel Mess</a>
+          <a href="cafe.html">Cafeteria</a>
+          
+        </div>
+      </ul>
+      
+    </div>
+  </div>
+  </div>
+  
+  
+  <div id="banner" class="banner">
+  
+</div>
+
+  <div class="marquee">
+      <p>This is a scrolling text message. This is a scrolling text message. This is a scrolling text message.</p>
+    </div>
+
+    <div class="headings">
+      
+      <h1>About The Campus </h1>
+        
+      <p>
+        Bannari Amman Institute of Technology is an Autonomous, Self-financing Engineering College, Approved by AICTE, New Delhi and Affiliated to Anna University, Chennai. Nestled on the banks of The River Bhavani, BIT campus provides environment for learning in harmony with nature, away from the odds of the city life. The spacious and the earth hugging buildings punctuated with landscaped courtyards and pathways are designed to emphasise the business ethics and or characteristics of an excellent centre for learning. The Campus hosts well planned academic blocks, computer centres, lecture halls, libraries, laboratories, conference halls, staff quarters, hostels and students' centres. The Campus also houses a co-operative store, ATM (Axis, SBI and KVB) and a clinic to attend to the general health of the students and staff.
+      </p>
+    </div>
+    <main>
+      
+    <div class="newsletters-container">
+      <div class="img">
+        <img src="special.jpg" alt="December 2022 Newsletter">
+      </div>
+      <div class="overlay">
+        <h3>Special Labs</h3>
+      </div>
+    </div>
+    
+
+    <div class="newsletters-container">
+      <div class="img">
+        <img src="gurugulam.jpg" alt="December 2022 Newsletter">
+      
+      <div class="overlay">
+        <h3>Gurugulam Skills</h3>
+      </div>
+      </div>
+    </div>
+
+    <div class="newsletters-container">
+      <div class="img">
+        <img src="Skills.jpg" alt="December 2022 Newsletter">
+      </div>
+      <div class="overlay">
+        <h3>Day & Night Skills</h3>
+      </div>
+    </div>
+
+    <div class="newsletters-container">
+      <div class="heading">
+      <p>BIT Special Laboratories provide a platform for students to learn, practice, and innovate on the globally sought after skills, beside product development. BIT Special Laboratories established over-and-over the regular labs mandated by the University / AICTE, trains students to participate in internationally reputed competitions.</p>
+      </div>
+      
+
+    </div>
+
+    <div class="newsletters-container">
+      <div class="heading">
+      <p>The benchmarking initiative of BIT Gurugulam was established from the year 2021. The Gurugulam provides students with hands-on experience in foundation skills under faculty supervision. Through the program, students will get acquainted with professional and technical skills. </p>
+      </div>
+      
+  </div>
+    <div class="newsletters-container">
+      <div class="heading">
+      <p>Our college offers a comprehensive array of day and night skills programs to cater to the diverse needs of our student community. By day, students can immerse themselves in workshops and seminars designed to complement their academic curriculum, fostering practical skills vital for personal and professional growth. </p>
+    </div>
+    
+
+
+    </div>
+    
+    
+    
+    </main>
+    
+    
+
+  <div class="container">
+    <div class="card">
+
+      <div class="info-box">
+        <h2>History </h2>
+        <p>Explore the rich tapestry of Bannari Amman Institute of Technology's history, where every milestone is a testament to our journey of excellence.</p>
+        <a href="history.html">Discover More →</a>
+      </div>
+      
+      
+    </div>
+  </div>
+  
+
+  <main>
+  <div class="newsletters-container">
+    <div class="img">
+      <img src="students.jpg" alt="December 2022 Newsletter">
+    </div>
+    <div class="overlay">
+      <h2>7542</h2>
+      <h3>Happy Students</h3>
+    </div>
+  </div>
+  
+
+  <div class="newsletters-container">
+    <div class="img">
+      <img src="faculty.webp" alt="December 2022 Newsletter">
+      
+    
+    <div class="overlay">
+      <h2>458</h2>
+      <h3>DEDICATED STAFF</h3>
+    </div>
+    </div>
+  </div>
+
+  <div class="newsletters-container">
+    <div class="img">
+      <img src="alumni.jpg" alt="December 2022 Newsletter">
+    </div>
+    <div class="overlay">
+      <h2>27,840</h2>
+      <h3>SUCCESSFUL ALUMNI</h3>
+    </div>
+  </div>
+
+  <!-- <div class="newsletters-container">
+    <div class="heading">
+    <p>Embark on a soul-stirring journey through time and spirituality at the iconic Brihadeeswarar Temple in Thanjavur. </p>
+    </div>
+   
+
+  </div>
+
+  <div class="newsletters-container">
+    <div class="heading">
+    <p>Embark on a captivating journey to explore Mahabalipuram's Shore Temple, a UNESCO World Heritage Site. Marvel at its timeless beauty.</p>
+    </div>
+    
+</div>
+  <div class="newsletters-container">
+    <div class="heading">
+    <p>Embark on a journey through time and spirituality at the UNESCO-listed Airavatesvara Temple in Dharasuram.  </p>
+  </div>
+  <a href="explore-more-page1.html" class="explore-more-btn">
+    Explore More →
+  </a>
+
+  </div> -->
+ 
+  </main>
+  <div class="container">
+    <div class="card2">
+      <div class="info-box">
+        <h2>Academics</h2>
+        <p> Cultivating academic excellence lies at the heart of our college's mission. Our academic programs are meticulously crafted to inspire curiosity, foster critical thinking, and equip students with the knowledge and skills needed to thrive in their chosen fields. </p>
+        <a href="event.html">Discover More →</a>
+      </div>
+    </div>
+  </div>
+  
+  <main>
+  <div class="newsletters-container">
+    <div class="img">
+      <img src="learning.jpg" alt="December 2022 Newsletter">
+    </div>
+    <div class="overlay">
+      <h3>Learning Centre</h3>
+    </div>
+  </div>
+  
+
+  <div class="newsletters-container">
+    <div class="img">
+      <img src="auditorium.jpeg" alt="December 2022 Newsletter">
+    
+    <div class="overlay">
+      <h3>Vedanayagam Auditorium</h3>
+    </div>
+    </div>
+  </div>
+
+  <div class="newsletters-container">
+    <div class="img">
+      <img src="image1.jpg" alt="December 2022 Newsletter">
+    </div>
+    <div class="overlay">
+      <h3>Research Centre</h3>
+    </div>
+  </div>
+
+  <div class="newsletters-container">
+    <div class="heading">
+    <p>A centrally air - conditioned, five storyed new Learning Centre was built in an area of 8240 sq.m (88662 sq.ft) on par with international standards with a view to cater to the prerequisites of pedagogy in an exemplary manner. The fully automated Learning Centre provides an ambience conducive for the teaching and learning process with the support of 96,000 volumes of text and reference books with RFID based Library Management System.</p>
+    </div>
+
+  </div>
+
+  <div class="newsletters-container">
+    <div class="heading">
+    <p>Within the vibrant campus of our college, we are proud to boast two exceptional auditoriums: the BIT Auditorium and the Vedhanayagam Auditorium. The BIT Auditorium, with its impressive capacity of 1800 seats, stands as a hallmark of grandeur and sophistication. It serves as a premier venue for hosting large-scale events, conferences, cultural extravaganzas, and academic ceremonies, providing a spacious and captivating environment for attendees.</p>
+    </div>
+    
+</div>
+  <div class="newsletters-container">
+    <div class="heading">
+    <p>Nestled within our college campus lies a beacon of innovation: our state-of-the-art Research Park. This cutting-edge facility is equipped with advanced machinery and cutting-edge technology, providing a dynamic environment for groundbreaking research and development. From precision instruments to cutting-edge equipment, our Research Park offers researchers and students unparalleled resources to explore, experiment, and innovate across various disciplines.</p>
+  </div>
+
+  
+  
+  
+</main>
+
+  <div class="container">
+    <div class="card3">
+      <div class="info-box">
+        <h2>Infrastructure of BIT</h2>
+        <p>Step into our college, and you'll find yourself immersed in a world of exceptional infrastructure designed to inspire and empower. From state-of-the-art laboratories equipped with cutting-edge technology to modern classrooms conducive to interactive learning, every corner of our campus is meticulously crafted to foster excellence in education. </p>
+        <a href="culture.html">Discover More →</a>
+      </div>
+    </div>
+  </div>
+  
+  <!-- <main>
+  <div class="newsletters-container">
+    <div class="img">
+      <img src="varkala.jpg"December 2022 Newsletter">
+    </div>
+    <div class="overlay">
+      <h3>Visa Guide</h3>
+    </div>
+  </div>
+  
+
+  <div class="newsletters-container">
+    <div class="img">
+      <img src="kodaikanalgallery.avif" alt="December 2022 Newsletter">
+    
+    <div class="overlay">
+      <h3>Tamil Nadu at a Glance</h3>
+    </div>
+    </div>
+  </div>
+
+  <div class="newsletters-container">
+    <div class="img">
+      <img src="travel.avif" alt="December 2022 Newsletter">
+    </div>
+    <div class="overlay">
+      <h3>Travel Guide</h3>
+    </div>
+  </div> -->
+  
+
+ 
+  </main>
+
+  
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-info">
+        <p>Address: Bannari Amman Institute of Technology, Sathy-Bhavani (State Highway), Alathukombai, Erode District - 638401, Tamil Nadu, India</p>
+        <p>Email: info@bitsathy.ac.in</p>
+        <p>Phone: +91-4295-226000</p>
+        <p>All rights reserved &copy; Bannari Amman Institute of Technology</p>
+        <p>
+          <a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a> | <a href="#">Contact Us</a>
+        </p>
+      </div>
+      <div class="footer-links">
+        <a href="https://www.facebook.com/bitsathyofficial" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.instagram.com/bitsathyofficial" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.youtube.com/channel/UCo26ShbHu8PPrHplbZdbmQg" target="_blank"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+  </footer>
+  
+    <script>
+
+
+
+  
+  var templeFacts = [
+      "Prestigious IMC Ramkrishna Bajaj National Quality Award 2019 in the Education Category from the IMC Chamber of Commerce and Industry.",
+      "Awarded 'Clean & Smart Campus Award 2019' for the best practices carried out in the institute premises by AICTE.",
+      "Ranked one among Top 100 Best Engineering Colleges in India by NIRF 2019, MHRD, Govt. Of India",
+      "Secured 2nd position in DATAQUEST-CMR Survey 2019 | Ranking of Top Private Technical Schools 2019",
+      
+    ];
+
+    function updateMarquee() {
+      
+      var marqueeElement = document.querySelector('.marquee p');
+
+      
+      var randomFact = templeFacts[Math.floor(Math.random() * templeFacts.length)];
+
+     
+      marqueeElement.textContent = randomFact;
+    }
+
+    updateMarquee();
+    setInterval(updateMarquee, 30000);
+</script>
+<script>
+function openMenu() {
+  document.querySelector('.sliding-menu').style.left = '0';
+}
+
+function closeMenu() {
+  document.querySelector('.sliding-menu').style.left = '-250px';
+}
+</script>
+
+<script>
+  var bannerImages = [
+    'image1.jpg',
+    'image2.jpg',
+    'classrooms.jpg'
+  ];
+
+  var currentBannerIndex = 0;
+
+  function changeBannerImage() {
+    var banner = document.getElementById('banner');
+    currentBannerIndex = (currentBannerIndex + 1) % bannerImages.length;
+    banner.style.backgroundImage = 'url(' + bannerImages[currentBannerIndex] + ')';
+  }
+
+  // Start the slideshow immediately after the page loads
+  window.addEventListener('load', function () {
+    changeBannerImage();
+    setInterval(changeBannerImage, 5000); // Change image every 5 seconds
+  });
+</script>
+
+
+<div class="scroll-to-top" onclick="scrollToTop()">
+  <span>&uarr;</span>
+</div>
+<script>
+  function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+}
+
+// Show/hide the scroll-to-top button based on scroll position
+window.addEventListener('scroll', function () {
+  var scrollButton = document.querySelector('.scroll-to-top');
+  if (window.scrollY > 300) {
+    scrollButton.style.display = 'block';
+  } else {
+    scrollButton.style.display = 'none';
+  }
+});
+
+
+
+</script>
+
+</body>
+
+
+</html>

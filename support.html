@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support Desk</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f3f3;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #666;
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        form {
+            margin-bottom: 30px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: calc(100% - 20px);
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            background-color: #f9f9f9;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        textarea:focus {
+            outline: none;
+            border-color: #007bff;
+        }
+
+        textarea {
+            height: 150px;
+        }
+
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        .input-label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #555;
+        }
+
+        .container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, lightgreen, skyblue);
+            border-radius: 10px;
+            z-index: -1;
+        }
+
+        .container::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, lightgreen, skyblue);
+            border-radius: 10px;
+            filter: blur(50px);
+            z-index: -2;
+        }
+
+        .container form {
+            position: relative;
+            z-index: 1;
+        }
+
+        .container h1,
+        .container h2 {
+            position: relative;
+            z-index: 1;
+        }
+
+    </style>
+    <script>
+        function submitForm() {
+            alert("Query submitted successfully!");
+            document.getElementById("queryForm").reset();
+            return false; // Prevent form from actually submitting
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Support Desk</h1>
+        <h2>Please fill out the form below to submit your query.</h2>
+
+        <form id="queryForm" onsubmit="return submitForm()">
+            <label for="name" class="input-label">Your Name</label>
+            <input type="text" id="name" name="name" required><br>
+            <label for="register_number" class="input-label">Register Number</label>
+            <input type="text" id="register_number" name="register_number" required><br>
+            <label for="email" class="input-label">Email</label>
+            <input type="email" id="email" name="email" required><br>
+            <label for="title" class="input-label">Title</label>
+            <input type="text" id="title" name="title" required><br>
+            <label for="content" class="input-label">Query</label>
+            <textarea id="content" name="content" required></textarea><br>
+            <input type="submit" value="Submit">
+        </form>
+
+    </div>
+</body>
+</html>

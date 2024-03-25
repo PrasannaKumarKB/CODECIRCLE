@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: --bs-font-sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+
+        
+
+        main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.newsletter-container {
+    position: relative;
+    background-color: #fff;
+    cursor: pointer;
+    margin: 10px;
+    overflow: hidden;
+    width: calc(20.33% - 20px); /* Adjust width to fit three containers in a row with margin */
+    height: 300px;
+}
+
+
+        img {
+        height: 300px;
+        border-radius: 20px;
+        transition: transform ease-in-out 0.5s;
+    }
+
+    .newsletter-container:hover img {
+        transform: scale(1.10);
+    }
+
+    .newsletter-container:hover .overlay {
+        transform: translateY(-50%);
+    }
+
+    .overlay {
+        position: absolute;
+        background-color: lightgreen;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        text-align: left;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    h3 {
+        color: white;
+        margin-left: 10px;
+        font-size: 15px;
+        text-align: center;
+        transform: translateY(0); /* Initial position */
+        transition: transform 0.3s ease-in-out;
+    }
+        .banner {
+        background-image: url("classrooms.jpg");
+        background-size: cover;
+        height: 700px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-top: 20px;
+      }
+      h1{
+        text-align: left;
+        color: white;
+        font-size:xxx-large;
+        margin-left: 60px;
+      }
+      .footer-content {
+      display: inline-block;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      text-align: center;
+  }
+  footer {
+      background-color: skyblue; 
+      color: #fff; 
+      padding: 20px 0;
+      text-align: center;
+  }
+  
+  
+  .footer-info {
+      flex: 1;
+      text-align: center;
+      padding: 0 20px;
+  }
+  .footer-info a {
+      color: gold;
+  }
+  
+  
+  .footer-links {
+      flex: 1;
+      text-align: bottom;
+      padding: 0 20px;
+      margin-top: 30px;
+  }
+  
+  
+  .footer-links a {
+      color: #fff; 
+      text-decoration: none;
+      margin: 0 10px;
+      text-align: center;
+  }
+  
+  
+  .footer-links a:hover {
+      color: #f5a623; 
+  }
+    </style>
+    <title>Faculty Members</title>
+</head>
+<body>
+    <a class="back-button" href="index.html" style="position: absolute; top: 20px; left: 20px; font-size: 48px; color:white; text-decoration: none;">&larr;</a>
+    <div class="banner">
+        <div class="overlay">
+            <h1>Faculty Members</h1>
+        </div>
+    </div>
+    <main>
+        <div class="newsletter-container" onclick="openNewsletter('december-2022-approved-newsletter.pdf')">
+            <div class="img">
+                <img src="agrihead.png" alt="December 2022 Newsletter">
+            </div>
+            <div class="overlay">
+                <h3>Dr Chelladurai V</h3>
+                <h3>HOD - Agricultural Engineering</h3>
+            </div>
+        </div>
+
+        <div class="newsletter-container" onclick="openNewsletter('february.pdf')">
+            <div class="img">
+                <img src="aidshead.png" alt="February Newsletter">
+            </div>
+            <div class="overlay">
+                <h3>Dr Sadhasivam N</h3>
+                <h3>HOD - Artificial Intelligence & Data Science</h3>
+            </div>
+        </div>
+
+        <div class="newsletter-container" onclick="openNewsletter('march.pdf')">
+            <div class="img">
+                <img src="aimlhead.jpg" alt="March 2023 Newsletter">
+            </div>
+            <div class="overlay">
+                <h3>Dr Kodieswari A</h3>
+                <h3>HOD - Artificial Intelligence & Machine Learning</h3>
+            </div>
+        </div>
+        <div class="newsletter-container" onclick="openNewsletter('april.pdf')">
+            <div class="img">
+                <img src="biomedhead.jpg" alt="March 2023 Newsletter">
+            </div>
+            <div class="overlay">
+                <h3>Dr Hemalatha K</h3>
+                <h3>HOD - Biomedical Engineering</h3>
+            </div>
+        </div>
+        <div class="newsletter-container" onclick="openNewsletter('may.pdf')">
+            <div class="img">
+                <img src="biotechhead.png" alt="March 2023 Newsletter">
+            </div>
+            <div class="overlay">
+                <h3>Dr Kirupa Sankar M</h3>
+                <h3>HOD - Bio Technology</h3>
+            </div>
+        </div>
+        <div class="newsletter-container" onclick="openNewsletter('june.pdf')">
+            <div class="img">
+                <img src="civilhead.png" alt="March 2023 Newsletter">
+            </div>
+            <div class="overlay">
+                <h3>Dr Karthiga Shenbagam N</h3>
+                <h3>HOD - Civil Engineering</h3>
+            </div>
+        </div>
+        <div class="newsletter-container" onclick="openNewsletter('july.pdf')">
+            <div class="img">
+                <img src="csbshead.png" alt="March 2023 Newsletter">
+            </div>
+            <div class="overlay">
+                <h3>Dr Priya J</h3>
+                <h3>HOD - Computer Science and Business Systems</h3>
+            </div>
+        </div>           
+        <div class="newsletter-container" onclick="openNewsletter('august.pdf')">
+            <div class="img">
+                <img src="csdhead.png" alt="March 2023 Newsletter">
+            </div>
+            <div class="overlay">
+                <h3>Dr Sathis Kumar K</h3>
+                <h3>HOD - Computer Science and Design</h3>
+            </div>
+            </div>
+                <div class="newsletter-container" onclick="openNewsletter('september.pdf')">
+                    <div class="img">
+                        <img src="csehead.png" alt="March 2023 Newsletter">
+                    </div>
+                    <div class="overlay">
+                        <h3>Dr Sasikala D</h3>
+                        <h3>HOD - Computer Science and Engineering</h3>
+                    </div>
+                </div> 
+                <div class="newsletter-container" onclick="openNewsletter('october.pdf')">
+                    <div class="img">
+                        <img src="ecehead.jpg" alt="March 2023 Newsletter">
+                    </div>
+                    <div class="overlay">
+                        <h3>Dr Prakash S P</h3>
+                        <h3>HOD - Electronics and Communication Engineering</h3>
+                    </div>
+                </div>
+                <div class="newsletter-container" onclick="openNewsletter('october.pdf')">
+                    <div class="img">
+                        <img src="eeehead.png" alt="March 2023 Newsletter">
+                    </div>
+                    <div class="overlay">
+                        <h3>Dr Maheswari K T</h3>
+                        <h3>HOD - Electrical and Electronics Engineering</h3>
+                    </div>
+                </div>
+                <div class="newsletter-container" onclick="openNewsletter('october.pdf')">
+                    <div class="img">
+                        <img src="eiehead.jpg" alt="March 2023 Newsletter">
+                    </div>
+                    <div class="overlay">
+                        <h3>Dr Vairavel K S</h3>
+                        <h3>HOD - Electronics and Instrumentation Engineering</h3>
+                    </div>
+                </div>
+                <div class="newsletter-container" onclick="openNewsletter('october.pdf')">
+                    <div class="img">
+                        <img src="fthead.jpg" alt="March 2023 Newsletter">
+                    </div>
+                    <div class="overlay">
+                        <h3>Dr Subrata Das</h3>
+                        <h3>HOD - Fashion Technology</h3>
+                    </div>
+                </div>
+                <div class="newsletter-container" onclick="openNewsletter('october.pdf')">
+                    <div class="img">
+                        <img src="ithead.jpg" alt="March 2023 Newsletter">
+                    </div>
+                    <div class="overlay">
+                        <h3>Dr Arun Shalin L V</h3>
+                        <h3>HOD - Information Technology</h3>
+                    </div>
+                </div>
+                <div class="newsletter-container" onclick="openNewsletter('october.pdf')">
+                    <div class="img">
+                        <img src="isehead.png" alt="March 2023 Newsletter">
+                    </div>
+                    <div class="overlay">
+                        <h3>Prof. Nandhini S S</h3>
+                        <h3>HOD - Information Science and Engineering</h3>
+                    </div>
+                </div>
+                <div class="newsletter-container" onclick="openNewsletter('october.pdf')">
+                    <div class="img">
+                        <img src="mechhead.png" alt="March 2023 Newsletter">
+                    </div>
+                    <div class="overlay">
+                        <h3>Dr Kumaresan G</h3>
+                        <h3>HOD - Mechanical Engineering</h3>
+                    </div>
+                </div>
+                <div class="newsletter-container" onclick="openNewsletter('october.pdf')">
+                    <div class="img">
+                        <img src="mechahead.png" alt="March 2023 Newsletter">
+                    </div>
+                    <div class="overlay">
+                        <h3>Dr Jegadheeswaran S</h3>
+                        <h3>HOD - Mechatronics</h3>
+                    </div>
+                </div>
+                <div class="newsletter-container" onclick="openNewsletter('october.pdf')">
+                    <div class="img">
+                        <img src="textilehead.png" alt="March 2023 Newsletter">
+                    </div>
+                    <div class="overlay">
+                        <h3>Dr Janarthanan M</h3>
+                        <h3>HOD - Textile Technology</h3>
+                    </div>
+                </div>
+
+    </main>
+    <footer>
+        <div class="footer-content">
+          <div class="footer-info">
+            <p>Address: Bannari Amman Institute of Technology, Sathy-Bhavani (State Highway), Alathukombai, Erode District - 638401, Tamil Nadu, India</p>
+            <p>Email: info@bitsathy.ac.in</p>
+            <p>Phone: +91-4295-226000</p>
+            <p>All rights reserved &copy; Bannari Amman Institute of Technology</p>
+            <p>
+              <a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a> | <a href="#">Contact Us</a>
+            </p>
+          </div>
+          <div class="footer-links">
+            <a href="https://www.facebook.com/bitsathyofficial" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/bitsathyofficial" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/channel/UCo26ShbHu8PPrHplbZdbmQg" target="_blank"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </footer>
+    <script>
+        function openNewsletter(newsletter) {
+            window.open('newsletters/' + newsletter, '_blank');
+        }
+        // Handle clicking the back button
+        const backBtn = document.querySelector(".back-button");
+        backBtn.addEventListener("click", (e) => {
+            e.preventDefault();
+            window.history.back();
+        });
+    </script>
+</body>
+</html>

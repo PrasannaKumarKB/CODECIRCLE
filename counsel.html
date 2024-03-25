@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counseling Booking</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f3f3;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #666;
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        form {
+            margin-bottom: 30px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: calc(100% - 20px);
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            background-color: #f9f9f9;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        textarea:focus {
+            outline: none;
+            border-color: #007bff;
+        }
+
+        textarea {
+            height: 150px;
+        }
+
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        .input-label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #555;
+        }
+
+        .container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, lightgreen, skyblue);
+            border-radius: 10px;
+            z-index: -1;
+        }
+
+        .container::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, lightgreen, skyblue);
+            border-radius: 10px;
+            filter: blur(50px);
+            z-index: -2;
+        }
+
+        .container form {
+            position: relative;
+            z-index: 1;
+        }
+
+        .container h1,
+        .container h2 {
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Popup message style */
+        .popup {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(0, 0, 0, 0.8);
+            color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            z-index: 999;
+        }
+    </style>
+    <script>
+        function submitForm() {
+            // Dummy function for demonstration
+            // In real use, you would handle form submission to server-side logic
+            // and display the popup message based on the response
+
+            // Show popup message
+            var popup = document.createElement('div');
+            popup.classList.add('popup');
+            popup.textContent = 'Slot booked successfully!';
+            document.body.appendChild(popup);
+
+            // Remove popup message after 3 seconds and reset form
+            setTimeout(function() {
+                popup.remove();
+                document.getElementById('bookingForm').reset();
+            }, 3000);
+
+            // Prevent form submission (for demonstration)
+            return false;
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Counseling Booking</h1>
+        <h2>Please fill out the form below to book a counseling session.</h2>
+
+        <form id="bookingForm" onsubmit="return submitForm()">
+            <label for="name" class="input-label">Your Name</label>
+            <input type="text" id="name" name="name" required><br>
+            <label for="register_number" class="input-label">Register Number</label>
+            <input type="text" id="register_number" name="register_number" required><br>
+            <label for="email" class="input-label">Email</label>
+            <input type="email" id="email" name="email" required><br>
+            <label for="date" class="input-label">Preferred Date</label>
+            <input type="date" id="date" name="date" required><br>
+            <label for="time" class="input-label">Preferred Time</label>
+            <input type="time" id="time" name="time" required><br>
+            <label for="message" class="input-label">Additional Message</label>
+            <textarea id="message" name="message" placeholder="Optional"></textarea><br>
+            <input type="submit" value="Book Now">
+        </form>
+    </div>
+</body>
+</html>
